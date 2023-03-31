@@ -19,10 +19,8 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "date")
     private LocalDate date;
 
-    @Column(name = "cost")
     private Double cost;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
